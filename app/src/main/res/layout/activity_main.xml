@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#80FB02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/text_view"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="                 NEXT            ➡️"
+        android:layout_width="350dp"
+        android:layout_height="60dp"/>
+    
+    <ImageView
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@id/text_view"
+        app:layout_constraintTop_toBottomOf="@id/text_view"
+        app:layout_constraintStart_toStartOf="@id/text_view"
+        android:src="@drawable/ic_meduza"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/regis_ter"
+        android:layout_marginTop="15dp"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="REGISTER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="@id/text_view"
+        app:layout_constraintTop_toBottomOf="@id/text_view"
+        app:layout_constraintStart_toStartOf="@id/text_view"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="Trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <EditText
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@id/regis_ter"
+        app:layout_constraintTop_toBottomOf="@id/regis_ter"
+        app:layout_constraintStart_toStartOf="@id/regis_ter"
+        android:hint="     Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="@id/regis_ter"
+        app:layout_constraintTop_toBottomOf="@id/regis_ter"
+        app:layout_constraintStart_toStartOf="@id/regis_ter"
+        android:hint="     Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="@id/regis_ter"
+        app:layout_constraintTop_toBottomOf="@id/regis_ter"
+        app:layout_constraintStart_toStartOf="@id/regis_ter"
+        android:hint="     Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
